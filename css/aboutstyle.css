@@ -422,3 +422,65 @@ body{
     
     border:1px solid rgba(255, 255, 255, 0.2);
 }
+@media (max-width:809px){
+    .iris_contact{
+        padding:40px 24px;
+        flex-direction:column-reverse;
+        gap:13px;
+    }
+    .iris_contact_form{
+        width: 100%;
+    }
+    .iris_contact_location p{
+        font-size:18px;
+        font-family:"IBM Plex Mono", monospace;
+        
+    }
+
+    .iris_contact_contact p:first-child{
+        font-size:13px;
+        font-family:"IBM Plex Mono", monospace;
+        
+    }
+    .footer{
+        padding:60px 40px 30px;
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+        align-items: center;
+        background-color: #141414;
+    
+    }
+    .footer_header{
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+        height:min-content;
+        width:100%;
+        align-self:unset;
+        align-items: center;
+    }
+    .footer_header_one{
+        align-items:center;
+        width:100%;
+    }
+    .footer_header_two{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        flex-grow:1;
+        width:100%;
+        align-items:center;
+    }
+    .footer_header_three{
+        width:210px;
+    }
+    .footer_main_p{
+        font-size:12px;
+        
+    }
+    .footer_main{
+        width:100%;
+        align-items: center;
+    }
+}

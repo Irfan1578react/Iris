@@ -201,8 +201,8 @@ p,h1,h2,h3,h4,h5,h6{
 
 .header_section p:first-child{
     font-family: "IBM Plex Mono", monospace;
-    /* font-size:2rem; */
-    font-size:24px;
+    font-size:2rem;
+    /* font-size:24px; */
     font-weight:500;
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
@@ -327,9 +327,10 @@ p,h1,h2,h3,h4,h5,h6{
     display:flex;
     flex-wrap: wrap;
     gap:24px;
-    justify-content:flex-start;
+    justify-content:space-between;
     align-items:flex-start;
     height:min-content;
+    
     width:100%;
 }
 .card_suite_all{
@@ -341,23 +342,35 @@ p,h1,h2,h3,h4,h5,h6{
     padding:24px;
     border:1px solid rgba(72, 151, 84, 0.2);
     min-height:250px;
-    max-width:235px;
-    width:370px;
+    max-width:300px;
+    width:250px;
     height:285px;
     border-radius:1rem;
     box-shadow: 0 41px 90px #08f8fe08, 0 164px 164px #08f8fe08, 0 368px 221px #08f8fe05, 0 655px 262px #08f8fe00, 0 1023px 287px #08f8fe00;
+    transition: 1s ease;
 }
 .card_suite_all_img{
     display:block;
     width:155px;
 }
-.card_suite_three p:last-child{
+.card_suite_all .know{
+    display:none;
     border-radius: 1rem;
+    padding:2px 5px;
     width:100%;
     text-align:center;
     align-self: center;
     color:black;
-    background-image: linear-gradient(to left,rgb(0, 221, 255),rgb(15, 184, 178));
+    background-image: linear-gradient(to right, rgb(12, 255, 210), rgb(23, 250, 255), rgb(0, 191, 255));
+    /* opacity:0;
+    transition:all 2s ease; */
+}
+.card_suite_all:hover .know{
+    display: block;
+    opacity:1;
+    
+
+
 }
 .iris_contact{
     padding:40px 80px;
@@ -601,3 +614,66 @@ p,h1,h2,h3,h4,h5,h6{
     background-image:linear-gradient(to right,rgb(32, 178, 207),rgb(0, 217, 255));
     white-space: nowrap;
 } */
+
+@media (max-width:809px){
+    .iris_contact{
+        padding:40px 24px;
+        flex-direction:column-reverse;
+        gap:13px;
+    }
+    .iris_contact_form{
+        width: 100%;
+    }
+    .iris_contact_location p{
+        font-size:18px;
+        font-family:"IBM Plex Mono", monospace;
+        
+    }
+
+    .iris_contact_contact p:first-child{
+        font-size:13px;
+        font-family:"IBM Plex Mono", monospace;
+        
+    }
+    .footer{
+        padding:60px 40px 30px;
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+        align-items: center;
+        background-color: #141414;
+    
+    }
+    .footer_header{
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+        height:min-content;
+        width:100%;
+        align-self:unset;
+        align-items: center;
+    }
+    .footer_header_one{
+        align-items:center;
+        width:100%;
+    }
+    .footer_header_two{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        flex-grow:1;
+        width:100%;
+        align-items:center;
+    }
+    .footer_header_three{
+        width:210px;
+    }
+    .footer_main_p{
+        font-size:12px;
+        
+    }
+    .footer_main{
+        width:100%;
+        align-items: center;
+    }
+}

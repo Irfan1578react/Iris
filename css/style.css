@@ -136,6 +136,10 @@ p,h1,h2,h3,h4,h5,h6{
     white-space:wrap;
     word-break:break-word;
     word-wrap:break-word;
+    animation: appear;
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
     
 
 }
@@ -231,7 +235,13 @@ p,h1,h2,h3,h4,h5,h6{
     flex-direction:column;
     gap:10px;
     font-family:"IBM Plex Mono",monospace;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
 }
+
 .main_iris_heading p:first-child{
     color:white;
 }
@@ -242,6 +252,11 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .main_iris_content{
     color:white;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
 }
 .main_iris_card{
     padding:60px 160px;
@@ -268,6 +283,16 @@ p,h1,h2,h3,h4,h5,h6{
     height:100%;
     backdrop-filter: blur(3px);
     box-shadow: 0 41px 90px #08f8fe08, 0 164px 164px #08f8fe08, 0 368px 221px #08f8fe05, 0 655px 262px #08f8fe00, 0 1023px 287px #08f8fe00;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
+}
+.card_all:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
 }
 .card_all_img{
    position: absolute; 
@@ -292,6 +317,16 @@ p,h1,h2,h3,h4,h5,h6{
     font-size:1.5rem;
     text-align:center;
     padding:100px 0;
+    
+}
+.main_animate p{
+    font-size: 2rem;
+    line-height:3rem;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
 }
 .blue{
     color:rgb(0, 166, 255)
@@ -314,10 +349,26 @@ p,h1,h2,h3,h4,h5,h6{
     display:flex;
     flex-direction:column;
     gap:10px;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
 }
 .iris_suite_para p:first-child{
     color:white;
     font-size:1rem;
+}
+@keyframes appeartwice {
+    from{
+        scale:0.5;
+        opacity:0;
+    }
+    to {
+        scale:1.2;
+        opacity:1;
+    }
+    
 }
 .iris_suite_para p:last-child{
     color:rgba(0, 229, 255, 0.874);
@@ -348,6 +399,11 @@ p,h1,h2,h3,h4,h5,h6{
     border-radius:1rem;
     box-shadow: 0 41px 90px #08f8fe08, 0 164px 164px #08f8fe08, 0 368px 221px #08f8fe05, 0 655px 262px #08f8fe00, 0 1023px 287px #08f8fe00;
     transition: 1s ease;
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: forwards ;
+    animation-duration: 2s;
 }
 .card_suite_all_img{
     display:block;
@@ -364,13 +420,20 @@ p,h1,h2,h3,h4,h5,h6{
     background-image: linear-gradient(to right, rgb(12, 255, 210), rgb(23, 250, 255), rgb(0, 191, 255));
     /* opacity:0;
     transition:all 2s ease; */
+    transition-duration: 2s;
 }
 .card_suite_all:hover .know{
     display: block;
+   
     opacity:1;
     
 
 
+}
+.card_suite_all:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
 }
 .iris_contact{
     padding:40px 80px;
@@ -442,6 +505,17 @@ p,h1,h2,h3,h4,h5,h6{
     padding:12px 16px;
     background-image: linear-gradient(to right, rgb(12, 255, 210), rgb(23, 250, 255), rgb(0, 191, 255)); 
     border-radius:4px;
+}
+@keyframes appear {
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+    
 }
 .footer{
     padding:60px 40px 30px 60px;

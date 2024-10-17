@@ -153,8 +153,6 @@ p,h1,h2,h3,h4,h5,h6{
     display:block;
     top:300px;
     right:0px;
-    /* width:720px;
-    height:720px; */
     z-index:5;
     
     }
@@ -174,13 +172,6 @@ p,h1,h2,h3,h4,h5,h6{
         scale:1;
     }
 }
-/* .header_section p{
-    
-    font-size:14px;
-    
-    
-    
-} */
 .li_product{
     display:flex;
     align-items: center;
@@ -196,14 +187,9 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .li_product_li{
     
-    /* transform:translate(0%,72%); */
-    
     border:1px solid rgba(2, 249, 254, 0.2);
     background-color: bisque;
     width:8rem;
-    /* display:flex;
-    flex-direction:column;
-    justify-content: flex-start; */
     margin-top:0.2rem;
     background-color:#163744 ;
     border-radius: 0.5rem;
@@ -216,12 +202,6 @@ p,h1,h2,h3,h4,h5,h6{
 .li_product:hover .pro{
     color:#05f9fe;
 }
-/* @media (min-width:0px){
-.li_product:hover .outer_div_li{
-    display:block;
-}
-.hover{}
-} */
 .li_product_li li{
     padding:6px 20px;
     margin:5px;
@@ -280,16 +260,6 @@ p,h1,h2,h3,h4,h5,h6{
     color:rgb(0, 208, 255);
     font-size:1.6rem;
 }
-
-/* .main_iris_card{
-    padding:40px 24px;
-    background-color: black;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    gap:50px;
-    width:100%;
-} */
 .card_one,.card_two,.card_three{
     padding:40px;
     background-color: #051c23;
@@ -419,17 +389,12 @@ p,h1,h2,h3,h4,h5,h6{
 
 .toggle-label {
     cursor: pointer;
-    /* padding:0 1px; */
     border: 1px solid rgb(90, 235, 245);
     border-radius: 10px;
     background-color: #FFFFFF80;
     display: inline-block;
     line-height: 0;
   }
-
-/* .target-div {
-    /* display: none; */
-    /* background-color: #05f9fe; */
 .target-div{
     display:none;
 }
@@ -521,9 +486,6 @@ p,h1,h2,h3,h4,h5,h6{
     border:1px solid rgba(255, 255, 255, 0.2);
 }
 @media (max-width:803px){
-    /* .header_nav .header_nav_ul{
-        display:none;   
-    } */
      html{
         scroll-behavior: smooth;
      }
@@ -541,7 +503,6 @@ p,h1,h2,h3,h4,h5,h6{
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        /* gap:5px; */
         position:absolute;
         top:10px;
         right:1rem;
@@ -563,7 +524,6 @@ p,h1,h2,h3,h4,h5,h6{
         height:1px;
         width:20px;
         background-color: white;
-        /* margin-left:5px; */
     }
     .bar{
         transform: rotate(-45deg);
@@ -618,9 +578,6 @@ p,h1,h2,h3,h4,h5,h6{
         backdrop-filter: blur(10px);
         
     }
-    /* .header_nav .header_nav_ul{
-        display: none;
-    } */
      .header_nav_ul li{
         transition:all 2s ease-in;
      }
@@ -672,7 +629,7 @@ p,h1,h2,h3,h4,h5,h6{
         flex-direction:column;
         justify-content: flex-start;
         align-items: flex-start;
-        /* width:100%; */
+        
     }
     .li_product.active .outer_div_li{
         position:static;
@@ -706,9 +663,6 @@ p,h1,h2,h3,h4,h5,h6{
         flex-shrink:1;
         overflow:hidden;
     }
-    /* .card_one_img img{
-        width:auto;
-    } */
     .iris_contact{
         padding:40px 24px;
         flex-direction:column-reverse;
